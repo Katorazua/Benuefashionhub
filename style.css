@@ -330,3 +330,14 @@ header.sticky {
   font-size: 14px;
   font-weight: 500;
 }
+
+/* contact section */
+.contact {
+  background-color: #F3F4F6;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+  gap: 3rem;
+}

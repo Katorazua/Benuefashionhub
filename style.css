@@ -291,7 +291,7 @@ header.sticky {
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .row {
@@ -300,17 +300,16 @@ header.sticky {
 }
 
 .img-container {
-  width: 100%;
+  width: 200px;
   height: 200px;
-  background-color: #000000;
-  position: relative;
+  /* background-color: #000000;  Uncomment if you need background color */
   margin-bottom: 5px;
   overflow: hidden;
 }
 
 .row img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1/1;
   background-position: center;
   transition: all .40s;
 }
@@ -321,8 +320,8 @@ header.sticky {
 
 .product-text h5 {
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 1px;
+  left: 1px;
   color: #fff;
   font-size: 12px;
   font-weight: 500;
@@ -452,12 +451,12 @@ header.sticky {
   font-weight: 500;
 }
 
-/* contact section */
-.contact {
+/* footer section */
+.footer {
   background-color: #F3F4F6;
 }
 
-.contact-info {
+.footer-info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, auto));
   gap: 3rem;
@@ -482,14 +481,14 @@ header.sticky {
   color: #151515;
 }
 
-.contact-info h4 {
+.footer-info h4 {
   color: #212529;
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.contact-info p {
+.footer-info p {
   color: #565556;
   font-size: 14px;
   font-weight: 400;
@@ -500,7 +499,7 @@ header.sticky {
   transition: all .42s;
 }
 
-.contact-info p:hover {
+.footer-info p:hover {
   color: #EE1C47;
 }
 

@@ -40,36 +40,16 @@
 
             <div class="row">
 
-                <!-- <div class="col-half">
-                    <h4>Date of Birth</h4>
-
-                    <div class="input-group">
-
-                        <div class="col-third">
-                            <input type="text" placeholder="DD">
-                        </div>
-
-                        <div class="col-third">
-                            <input type="text" placeholder="MM">
-                        </div>
-
-                        <div class="col-third">
-                            <input type="text" placeholder="YYY">
-                        </div>
-
-                    </div>
-                </div> -->
-
                 <div class="col-half">
                     <h4>Gender</h4>
 
                   <div class="input-group">
 
-                    <input id="gender-male" type="checkbox" name="male_gender" value="male">
-                    <label for="gender-male">Male</label>
-
-                    <input id="gender-female" type="checkbox" name="female_gender" value="female">
-                    <label for="gender-female">Female</label>
+                    <select name="gender" id="">
+                        <option selected>choose gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
 
                   </div>
 
@@ -82,7 +62,7 @@
                 <h4>Terms and Conditions</h4>
                 <div class="input-group">
                   <input id="terms" type="checkbox"/>
-                  <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+                  <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the <a href="">privacy policy.</a></label>
                 </div>
             </div>
 
@@ -100,13 +80,8 @@
 
                 <div class="input-group">
 
-                    <input type="radio" name="payment-method" id="payment-method-card" value="card" checked="true">
-                    <label for="payment-method-card"><span>Continue</span></label>              
-
-                    <a href="login.html" style="color: #b9b9b9;">
-                        <input type="radio" name="payment-method" id="payment-method-paypal" value="card" checked="true">
-                        <label for="payment-method-paypal"><span>Login</span></label>
-                    </a>
+                    <button type="submit"><a href="login.html">Login</a></button>
+                    <button type="submit"><a href="">Continue</a></button>
 
                 </div>
                 

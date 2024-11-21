@@ -72,7 +72,7 @@ h4 a:hover {
 }
 
 input,
-input[type="radio"] + label,
+button[type="submit"],
 input[type="checkbox"] + label::before,
 select option,
 select{
@@ -85,6 +85,7 @@ select{
     transition: all 0.35s ease-in-out;
 }
 
+button:focus,
 input:focus{
     outline: 0;
     border-color: var(--lightGreen);
@@ -98,11 +99,11 @@ input:focus + .input-icon::after{
     border-right-color: var(--lightGreen);
 }
 
-input[type="radio"]{
+button[type="submit"]{
     display: none;
 }
 
-input[type="radio"] + label,
+button[type="submit"],
 select{
     display: inline-block;
     width: 50%;
@@ -112,24 +113,18 @@ select{
     cursor: pointer;
 }
 
-input[type="radio"] + label:first-of-type{
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+button[type="submit"] a {
+    color: var(--icons);
+    display: block;
+    text-decoration: none;
 }
 
-input[type="radio"] + label:last-of-type{
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+button[type="submit"] a:hover {
+    color: #fff;
 }
 
-input[type="radio"] + label i{
-    padding-right: 0.4em;
-}
-
-input[type="radio"]:checked + label,
-input:checked + label::before,
-select:focus,
-select:active{
+button[type="submit"]:hover,
+input:checked + label::before {
     background-color: var(--lightGreen);
     color: #fff;
     border-color: var(--lightGreen);
@@ -178,15 +173,17 @@ input:checked + label{
 
 select{
     height: 3.4em;
-    line-height: 2;
+    line-height: 2;border-radius: 5%;
 }
 
 select:focus,
 select:active{
     outline: 0;
+    border-color: var(--lightGreen);
+
 }
 
-select option{
+select option:hover {
     background-color: var(--lightGreen);
     color: #fff;
 }

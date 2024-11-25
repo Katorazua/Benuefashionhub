@@ -19,7 +19,7 @@
     <link href='https://unpkg.com/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>    
 
     <!-- CSS Links -->
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <!-- start header section -->
@@ -31,28 +31,22 @@
         </a>
 
         <ul class="navmenu">
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-                <div class="dropdown_items">
-                    <p>Shop</p>
-                    <ul>
-                        <li><a href="men.html">Men</a></li>
-                        <li><a href="wemen.html">Wemen</a></li>
-                        <li><a href="accessory.html">Accessory</a></li>
-                    </ul>
-                </div>
+            <li><a href="index.html">Home</a></li>
+            <li class="submenu"><a href="#shop" aria-disabled="false">Shop</a>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="wemen.html">Wemen</a></li>
+                    <li><a href="accessory.html">Accessory</a></li>
+                </ul>
             </li> 
-            <li><a href="#">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="#">Contact</a></li>
-            <li class="dropdown">
-                <div class="dropdown_items">
-                    <p>Pages</p>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">SignUp</a></li>
-                    </ul>
-                </div>
+            <li class="submenu"><a href="#pages">Pages</a>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="wemen.html">Wemen</a></li>
+                    <li><a href="accessory.html">Accessory</a></li>
+                </ul>
             </li>            
         </ul>
 
@@ -203,7 +197,7 @@
                 <h4>Let's start bringing sale on this sumer vacation</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit natus dolorum exercitationem eum numquam praesentium similique molestias, nam obcaecati vitae ad aspernatur mollitia tempore placeat consequuntur deleniti facere qui!</p>
 
-                <h6>Reading More...</h6>
+                <h6><a href="blog-single.html">Reading More...</a></h6>
             </div><!-- End blog item -->
             <div class="cart">
                  <div class="img-container">
@@ -253,15 +247,14 @@
             
             <div class="second-info">
                 <h4>Support</h4>
-                <p>Contact Us</p>
-                <p>About</p>
+                <p>Affiliate</p>
                 <p>Size Guide</p>
                 <p>Shopping & Resturns</p>
                 <p>Privacy</p>
             </div>
             
             <div class="third-info">
-                <h4>Shop</h4>
+                <h4 id="shop">Shop</h4>
                 <p>Men's Shopping</p>
                 <p>Wemen's Shopping</p>
                 <p>For Kids</p>
@@ -270,11 +263,12 @@
             </div>
             
             <div class="fourth-info">
-                <h4>Company</h4>
+                <h4 id="pages">Pages</h4>
                 <p>Blog</p>
-                <p>About</p>
-                <p>Affiliate</p>
-                <p>Furniture</p>
+                <p>About</p>                
+                <p>Contact Us</p>
+                <p>services</p>
+                <p>Products</p>
                 <p>Login</p>
             </div>
 
@@ -299,7 +293,7 @@
      <!-- end-tex section end -->
 
      <!-- JS Link -->
-      <script src="java.js"></script>
+      <script src="assets/js/main.js"></script>
 
 </body>
 </html>
